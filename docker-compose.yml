@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  spotify:
+    container_name: spotify2
+    image: local_spotify:1.0
+    environment:
+      #- DISPLAY=$DISPLAY
+      - PUID=1000
+      - PGID=1000
+    #volumes:
+     # - /tmp/.X11-unix:/tmp/.X11-unix
+    #devices:
+      #- /dev/snd:/dev/snd
